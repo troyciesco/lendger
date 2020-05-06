@@ -1,0 +1,58 @@
+Users
+    General Account Information
+    Borrowers
+        Balance
+        Projects
+    Lenders
+        Projects Funded/Investments
+
+    (Maybe it makes sense to make something like BorrowerAccount and LenderAccount and tie it to the user account id. That way we don't need to mess with the user object because it's only going to have user model stuff)
+Applications?
+Projects
+    Location
+    Borrower
+    Crypto Accepted
+    Application Status
+    Draws
+    Dates
+    Funding Goal
+    Balance
+    Photos
+Wallet
+    Balance
+    Multiple Cryptos to mimic possible real behavior (Stable Coin A, Stable Coin B, Stable Coin C)
+
+
+Queries
+    get Users
+    get Projects
+    get Wallet
+
+Mutations
+    create Project
+    update Project
+    delete Project
+
+    create Loan
+
+    create User
+    update User
+    delete User
+
+
+Maybe instead of showing the country in every single place there can be a flag icon (like on cards)
+Create an icon set for bed, bath, sqft, property type, etc.
+Grade, Rate, term, and Loan to ARV should be readily available as well
+
+	"husky": {
+		"hooks": {
+			"pre-commit": "lint-staged"
+		}
+	},
+	"lint-staged": {
+		"src/**/*.{js,jsx}": [
+			"eslint",
+			"pretty-quick --staged",
+			"git add"
+		]
+	}
